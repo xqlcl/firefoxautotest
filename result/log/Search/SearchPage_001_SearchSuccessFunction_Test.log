@@ -1,0 +1,54 @@
+[2018-12-19 17:26:51] [INFO] 当前操作系统是:[Windows 7]
+[2018-12-19 17:26:51] [INFO] 启动测试浏览器：[chrome]
+[2018-12-19 17:26:53] [INFO] 最大化浏览器:chrome
+[2018-12-19 17:26:54] [INFO] 打开测试页面:[http://47.96.98.213:9999/login]
+[2018-12-19 17:26:55] [INFO] loginSuccessFunction 测试用例开始执行！
+[2018-12-19 17:26:56] [INFO] 开始检查登录页面元素
+[2018-12-19 17:26:56] [INFO] 开始查找元素[By.cssSelector: body > div.layui-container > div > form > div:nth-child(1) > div > input]
+[2018-12-19 17:26:56] [INFO] 找到了元素 [By.cssSelector: body > div.layui-container > div > form > div:nth-child(1) > div > input]
+[2018-12-19 17:26:56] [INFO] 开始查找元素[By.cssSelector: body > div.layui-container > div > form > div:nth-child(2) > div > input]
+[2018-12-19 17:26:56] [INFO] 找到了元素 [By.cssSelector: body > div.layui-container > div > form > div:nth-child(2) > div > input]
+[2018-12-19 17:26:56] [INFO] 开始查找元素[By.cssSelector: body > div.layui-container > div > form > div.layui-form-item.cc-login-btn > button]
+[2018-12-19 17:26:56] [INFO] 找到了元素 [By.cssSelector: body > div.layui-container > div > form > div.layui-form-item.cc-login-btn > button]
+[2018-12-19 17:26:56] [INFO] 检查登录页面元素完毕
+[2018-12-19 17:26:56] [INFO] 开始输入登录信息
+[2018-12-19 17:26:56] [INFO] 清除元素 [By.cssSelector: body > div.layui-container > div > form > div:nth-child(1) > div > input]上的内容
+[2018-12-19 17:26:56] [INFO] 输入：[admin] 到 [By.cssSelector: body > div.layui-container > div > form > div:nth-child(1) > div > input]
+[2018-12-19 17:26:56] [INFO] 清除元素 [By.cssSelector: body > div.layui-container > div > form > div:nth-child(2) > div > input]上的内容
+[2018-12-19 17:26:56] [INFO] 输入：[123456] 到 [By.cssSelector: body > div.layui-container > div > form > div:nth-child(2) > div > input]
+[2018-12-19 17:26:56] [INFO] 输入登录信息完毕
+[2018-12-19 17:27:04] [INFO] 点击元素 [By.cssSelector: body > div.layui-container > div > form > div.layui-form-item.cc-login-btn > button]
+[2018-12-19 17:27:04] [INFO] 开始查找元素[By.className: main_body]
+[2018-12-19 17:27:05] [INFO] 找到了元素 [By.className: main_body]
+[2018-12-19 17:27:05] [INFO] 开始等待首页元素加载
+[2018-12-19 17:27:05] [INFO] 开始查找元素[By.cssSelector: body > div.layui-layout.layui-layout-admin > div.layui-header.header > div > ul > li:nth-child(4) > a > cite]
+[2018-12-19 17:27:05] [INFO] 找到了元素 [By.cssSelector: body > div.layui-layout.layui-layout-admin > div.layui-header.header > div > ul > li:nth-child(4) > a > cite]
+[2018-12-19 17:27:05] [INFO] 开始查找元素[By.cssSelector: body > div.layui-layout.layui-layout-admin > div.layui-header.header > div > ul > li:nth-child(5) > a > cite]
+[2018-12-19 17:27:06] [INFO] 找到了元素 [By.cssSelector: body > div.layui-layout.layui-layout-admin > div.layui-header.header > div > ul > li:nth-child(5) > a > cite]
+[2018-12-19 17:27:06] [INFO] 首页元素加载完毕
+[2018-12-19 17:27:06] [INFO] 开始检查用户名是不是：admin
+[2018-12-19 17:27:06] [INFO] 找到了期望的文字: [admin]
+[2018-12-19 17:27:06] [INFO] 用户名检查完毕,用户名是：admin
+[2018-12-19 17:27:06] [INFO] loginSuccessFunction 测试用例执行成功！
+[2018-12-19 17:27:06] [INFO] [2018_12_19_17_27_06_loginSuccessFunction] 截图成功，保存在：[ result/screenshot/2018_12_19_17_27_06_loginSuccessFunction.jpg ]
+[2018-12-19 17:27:07] [INFO] cxTest 测试用例开始执行！
+[2018-12-19 17:27:07] [INFO] 点击元素 [By.cssSelector: body > div.layui-layout.layui-layout-admin > div.layui-header.header > div > ul > li:nth-child(2) > a > cite]
+[2018-12-19 17:27:10] [INFO] 开始查找元素[By.cssSelector: body > div.layui-layout.layui-layout-admin > div.layui-body.layui-form > div > div > div.layui-tab-item.layui-show > iframe]
+[2018-12-19 17:27:10] [INFO] 找到了元素 [By.cssSelector: body > div.layui-layout.layui-layout-admin > div.layui-body.layui-form > div > div > div.layui-tab-item.layui-show > iframe]
+[2018-12-19 17:27:10] [INFO] 正在跳进frame:[ css selector: body > div.layui-layout.layui-layout-admin > div.layui-body.layui-form > div > div > div.layui-tab-item.layui-show > iframe]
+[2018-12-19 17:27:10] [INFO] 进入frame: [ css selector: body > div.layui-layout.layui-layout-admin > div.layui-body.layui-form > div > div > div.layui-tab-item.layui-show > iframe]成功 
+[2018-12-19 17:27:10] [INFO] 开始等待查询元素加载
+[2018-12-19 17:27:10] [INFO] 开始查找元素[By.cssSelector: #decision_form > div > div:nth-child(1) > div:nth-child(3) > label]
+[2018-12-19 17:27:10] [INFO] 找到了元素 [By.cssSelector: #decision_form > div > div:nth-child(1) > div:nth-child(3) > label]
+[2018-12-19 17:27:10] [INFO] 开始查找元素[By.cssSelector: #decision_form > div > div:nth-child(3) > div:nth-child(2) > div > div > div > input]
+[2018-12-19 17:27:10] [INFO] 找到了元素 [By.cssSelector: #decision_form > div > div:nth-child(3) > div:nth-child(2) > div > div > div > input]
+[2018-12-19 17:27:10] [INFO] 查询界面加载完毕
+[2018-12-19 17:27:10] [INFO] 开始输入查询信息
+[2018-12-19 17:27:10] [INFO] 输入：[20180614152114463] 到 [By.cssSelector: #decisionCode]
+[2018-12-19 17:27:10] [INFO] 输入：[13764645501] 到 [By.cssSelector: #contactPhone]
+[2018-12-19 17:27:10] [INFO] 输入决策信息完毕
+[2018-12-19 17:27:13] [INFO] 点击元素 [By.cssSelector: #decision_form > div > div:nth-child(3) > div:nth-child(3) > a.layui-btn.search_btn]
+[2018-12-19 17:27:13] [INFO] cxTest 测试用例执行成功！
+[2018-12-19 17:27:14] [INFO] [2018_12_19_17_27_13_cxTest] 截图成功，保存在：[ result/screenshot/2018_12_19_17_27_13_cxTest.jpg ]
+[2018-12-19 17:27:14] [INFO] 执行成功的用例 = loginSuccessFunction
+[2018-12-19 17:27:14] [INFO] 执行成功的用例 = cxTest

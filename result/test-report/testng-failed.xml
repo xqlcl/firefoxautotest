@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="driverConfgFilePath" value="config/driver.properties"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="testurl" value="http://47.98.241.242:18080/#/login"/>
+  <parameter name="timeOut" value="20"/>
+  <listeners>
+    <listener class-name="com.demo.test.plugins.arrow.TestResultListener"/>
+    <listener class-name="com.demo.test.plugins.arrow.RetryListener"/>
+    <listener class-name="com.demo.test.plugins.arrow.PowerEmailableReporter"/>
+  </listeners>
+  <test name="Login(failed)">
+    <classes>
+      <class name="com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test">
+        <methods>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test -->
+      <class name="com.demo.test.testcases.openurl.OpenurlPage_001_openurlsucss_Test">
+        <methods>
+          <include name="openurlsucss"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.openurl.OpenurlPage_001_openurlsucss_Test -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Suite] -->
