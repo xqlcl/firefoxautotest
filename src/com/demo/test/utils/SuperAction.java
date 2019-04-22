@@ -13,6 +13,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+
+import jxl.SheetSettings;
 /**
  * 
  * @Description 把Selenium操作的变成关键字操作
@@ -133,8 +135,18 @@ public class SuperAction {
             logger.error("IO异常");
             Assert.fail("IO异常");
         }
-        /**取得指定的case名字*/
-        Sheet sheet = workbook.getSheet(caseName);
+        Sheet sheet=null;
+//        for (int k = 0; k < workbook.getNumberOfSheets(); k++) {//获取每个Sheet表
+//        	
+//             sheet=workbook.getSheetAt(k);
+//             
+//             if(!sheet.getSheetName().startsWith("op")){
+//            	 continue;
+//             }
+             
+         /**取得指定的case名字*/
+           //  caseName=sheet.getSheetName();
+         sheet = workbook.getSheet(caseName);
         /**获得的实际行数*/
         int rows = sheet.getPhysicalNumberOfRows(); 
         /** excel中的测试数据*/
@@ -451,6 +463,7 @@ public class SuperAction {
                 }
             }
         }
+       }
     }
 
-}
+//}

@@ -34,6 +34,8 @@ public class SelectBrowser {
         String chromedriver_mac = PropertiesDataProvider.getTestData(driverConfgFilePath, "chromedriver_mac");
         String ghostdriver_win = PropertiesDataProvider.getTestData(driverConfgFilePath, "ghostdriver_win");
         String iedriver = PropertiesDataProvider.getTestData(driverConfgFilePath, "iedriver");
+        String firefoxdriver_win = PropertiesDataProvider.getTestData(driverConfgFilePath, "firefoxdriver_win");
+
         if (currentPlatform.toLowerCase().contains("win")) { //如果是windows平台
 
             if (browser.equalsIgnoreCase("ie")) {
@@ -46,10 +48,16 @@ public class SelectBrowser {
             } else if (browser.equalsIgnoreCase("chrome")) {
                 System.setProperty("webdriver.chrome.driver", chromedriver_win);
                 //返回谷歌浏览器对象
+                
                  return new ChromeDriver();
+                 
             } else if (browser.equalsIgnoreCase("firefox")) {
                 //返回火狐浏览器对象
-                return new FirefoxDriver();
+              // System.setProperty("webdriver.firefox.driver", firefoxdriver_win);
+            	//System.setProperty("webdriver.firefox.driver", "C:/Program Files (x86)/Mozilla Firefox/firefox.exe");
+            	//selenium 2.53.1 或者 2.51.0  对应火狐45,46
+              
+            	return new FirefoxDriver();
 
             } else if(browser.equalsIgnoreCase("ghost")){
                 DesiredCapabilities ghostCapabilities = new DesiredCapabilities();

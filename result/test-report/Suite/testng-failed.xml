@@ -12,16 +12,21 @@
   </listeners>
   <test name="Login(failed)">
     <classes>
-      <class name="com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test">
+      <class name="com.demo.test.testcases.login.LoginPage_op001_loginsuc_Test">
         <methods>
           <include name="startTest"/>
         </methods>
-      </class> <!-- com.demo.test.testcases.login.LoginPage_001_LoginSuccessFunction_Test -->
-      <class name="com.demo.test.testcases.openurl.OpenurlPage_001_openurlsucss_Test">
+      </class> <!-- com.demo.test.testcases.login.LoginPage_op001_loginsuc_Test -->
+      <class name="com.demo.test.testcases.openurl.OpenurlPage_op003_openurlsucss_Test">
         <methods>
           <include name="openurlsucss"/>
         </methods>
-      </class> <!-- com.demo.test.testcases.openurl.OpenurlPage_001_openurlsucss_Test -->
+      </class> <!-- com.demo.test.testcases.openurl.OpenurlPage_op003_openurlsucss_Test -->
+      <class name="com.demo.test.testcases.openurl.OpenurlPage_op004_openurlfail_Test">
+        <methods>
+          <include name="openurlfail"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.openurl.OpenurlPage_op004_openurlfail_Test -->
     </classes>
   </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

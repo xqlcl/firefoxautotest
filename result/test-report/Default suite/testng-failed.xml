@@ -3,12 +3,32 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.demo.test.testcases.login.LOGINPage_Sheet2_Test">
+      <class name="com.demo.test.testcases.login.LoginPage_op002_loginfail_Test">
         <methods>
-          <include name="sheet2"/>
           <include name="startTest"/>
+          <include name="loginfail"/>
         </methods>
-      </class> <!-- com.demo.test.testcases.login.LOGINPage_Sheet2_Test -->
+      </class> <!-- com.demo.test.testcases.login.LoginPage_op002_loginfail_Test -->
+      <class name="com.demo.test.testcases.openurl.OpenurlPage_op004_openurlfail_Test">
+        <methods>
+          <include name="openurlfail"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.openurl.OpenurlPage_op004_openurlfail_Test -->
+      <class name="com.demo.test.testcases.openurl.OpenurlPage_op003_openurlsucss_Test">
+        <methods>
+          <include name="openurlsucss"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.openurl.OpenurlPage_op003_openurlsucss_Test -->
+      <class name="com.demo.test.testcases.search.SearchPage_001_SearchSuccessFunction_Test">
+        <methods>
+          <include name="cxTest"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.search.SearchPage_001_SearchSuccessFunction_Test -->
+      <class name="com.demo.test.testcases.login.LoginPage_op001_loginsuc_Test">
+        <methods>
+          <include name="loginsuc"/>
+        </methods>
+      </class> <!-- com.demo.test.testcases.login.LoginPage_op001_loginsuc_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

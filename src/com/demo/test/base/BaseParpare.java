@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 
-import com.demo.test.utils.ExcelDataProvider;
+//import com.demo.test.utils.ExcelDataProvider;
 import com.demo.test.utils.LogConfiguration;
 import com.demo.test.utils.SeleniumUtil;
 public class BaseParpare {
@@ -27,7 +27,7 @@ public class BaseParpare {
     protected int timeOut = 0;
     
   // @BeforeClass
-    @BeforeSuite
+   @BeforeSuite
     /**启动浏览器并打开测试页面*/
     public void startTest(ITestContext context) {
         LogConfiguration.initLog(this.getClass().getSimpleName());
@@ -54,29 +54,29 @@ public class BaseParpare {
     /**
      * 测试数据提供者 - 方法
      * */
-    @DataProvider(name = "testData")
-    public Iterator<Object[]> dataFortestMethod() throws IOException {
-        String moduleName = null; // 模块的名字
-        String caseNum = null; // 用例编号
-        String className = this.getClass().getName();
-        System.out.println(className);
-        int dotIndexNum = className.indexOf("."); // 取得第一个.的index
-        System.out.println(dotIndexNum);
-        int underlineIndexNum = className.indexOf("_"); // 取得第一个_的index
-        System.out.println(underlineIndexNum);
-        if (dotIndexNum > 0) {    
-            moduleName = className.substring(24, className.lastIndexOf(".")); // 取到模块的名称
-            
-            System.out.println("模块名称"+moduleName);
-        }
-
-        if (underlineIndexNum > 0) {
-            caseNum = className.substring(underlineIndexNum + 1, underlineIndexNum + 4); // 取到用例编号
-            System.out.println(caseNum);
-        }
-        //将模块名称和用例的编号传给 ExcelDataProvider ，然后进行读取excel数据
-        return new ExcelDataProvider(moduleName, caseNum);
-    }
+//    @DataProvider(name = "testData")
+//    public Iterator<Object[]> dataFortestMethod() throws IOException {
+//        String moduleName = null; // 模块的名字
+//        String caseNum = null; // 用例编号
+//        String className = this.getClass().getName();
+//        System.out.println(className);
+//        int dotIndexNum = className.indexOf("."); // 取得第一个.的index
+//        System.out.println(dotIndexNum);
+//        int underlineIndexNum = className.indexOf("_"); // 取得第一个_的index
+//        System.out.println(underlineIndexNum);
+//        if (dotIndexNum > 0) {    
+//            moduleName = className.substring(24, className.lastIndexOf(".")); // 取到模块的名称
+//            
+//            System.out.println("模块名称"+moduleName);
+//        }
+//
+//        if (underlineIndexNum > 0) {
+//            caseNum = className.substring(underlineIndexNum + 1, underlineIndexNum + 4); // 取到用例编号
+//            System.out.println(caseNum);
+//        }
+//        //将模块名称和用例的编号传给 ExcelDataProvider ，然后进行读取excel数据
+//        return new ExcelDataProvider(moduleName, caseNum);
+//    }
 
 //    @AfterClass
 //    /**结束测试关闭浏览器*/
